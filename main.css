@@ -1,0 +1,390 @@
+ /*  Reset  */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/*  Top Navigation */
+nav {
+    background-color: #1f2a44;   
+    padding: 12px 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*  Page Container */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Headings for the pages */
+h1 {
+    margin-top: 0;
+    color: #1f2a44;
+}
+
+h2 {
+    color: #b51c2e; 
+}
+
+/*  Inputs  */
+input, select {
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/*  Study Space List  */
+.space-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.space-item:hover {
+  background-color: #f5f5f5;
+}
+
+.space-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.space-sub {
+  font-size: 16px;
+  color: #333;
+}
+
+.space-time {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.space-clicks {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.badge {
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  min-width: 110px;
+  text-align: center;
+}
+
+.badge-available {
+  background-color: green;
+}
+
+.badge-limited {
+  background-color: orange;
+}
+
+.badge-full {
+  background-color: red;
+}
+
+/* Campus Map CSS */
+body {
+  margin: 0;
+}
+
+.navbar {
+  background-color: #1f2a44;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+}
+
+/* Interactivity for the campus map */
+.map-container {
+    position: relative;
+}
+
+.campus-map {
+    width: 100%;
+}
+
+/* Clickable building */
+.map-point {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: #1b2a4a; /* navy */
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* #95 Marx Library */
+.marx {
+    top: 250px;
+    left: 1002px;
+}
+
+/* #95 Learning Commons */
+.commons{
+    top: 265px;  
+    left: 975px;
+}
+
+/* Student Center Lounge */
+.lounge {
+    top: 295px;
+    left: 945px;
+}
+
+/* Camellia Hall */
+.camellia {
+    top: 250px;  
+    left: 553px; 
+}
+
+/* Academic Services Center */
+.services {
+    top: 400px;
+    left: 845px; 
+}
+
+/* Center for Academic Excellence */
+.excellence {
+  top: 250px;
+  left: 980px;
+}
+
+/* Biomedical Library */
+.biomedical {
+  top: 260px;
+  left: 1145px;
+}
+
+/* Azalea Hall */
+.azalea {
+  top: 234px;
+  left: 652px;
+}
+
+/* Shelby Hall */
+.shelby {
+  top: 450px;
+  left: 955px;
+}
+
+/* Allied Health */
+.allied {
+  top: 240px;
+  left: 1208px; 
+}
+
+/* Mitchell College of Business */
+.business {
+  top: 392px;
+  left: 967px; 
+}
+
+
+
+/* Navbar for the campus map page */
+.navbar {
+  position: fixed;          
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #14274e;
+  padding: 15px 0;
+
+  display: flex;
+  justify-content: center;  
+  gap: 30px;
+
+  z-index: 1000;            
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Pushes the map down so navbar doesn't cover it */
+.map {
+  margin-top: 70px;
+  width: 100%;
+  display: block;
+}
+
+/* Aligning the availability page */
+.space-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  padding: 15px 0;
+}
+
+
+.badge {
+    position: absolute;
+    left: 55%;         
+    transform: translateX(-50%);
+    min-width: 120px;
+    text-align: center;
+}
+
+.space-actions {
+  width: 320px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+
+/*About page css*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Top header (logo area) */
+.top-header {
+    background-color: #f2f2f2;
+    padding: 5px 20px;
+}
+
+.logo {
+    margin: 0;
+    font-size: 30px; 
+    font-weight: bold;
+    color: #1b2a4a;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1b2a4a;
+    padding: 15px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Hover */
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Active page */
+.nav-links a.active {
+    text-decoration: underline;
+}
+
+/* About section */
+.about-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+}
+
+
+a {
+  color: #b51c2e; 
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

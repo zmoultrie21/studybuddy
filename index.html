@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    // Zachery Moulrtie
+    // ITE485 Senior Demo Project
+
+    
+  <title>StudyBuddy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" type="image/png" href="images/USALogo.png">
+  </head>
+
+  <body>
+  <header class="header">
+  <h1 class="logo">StudyBuddy</h1>
+  
+  <nav class="nav">
+    <!-- This is a USA LOGO from South's website -->
+    <img src="images/USALogo.png" alt="USA Logo" class="logo">
+
+    <a class="active" href="index.html">Home</a>
+    <a href="availability.html">Availability</a>
+    <a href="campusMap.html">Campus Map</a>
+    <a href="about.html">About</a>
+    <a href="contactUs.html">Contact Us</a>
+  </nav>
+
+  <p class="sub">University of South Alabama (Study Spaces)</p>
+</header>
+
+    <input type="text" id="searchStudySpace" placeholder="Search Study Spaces">
+
+    <label for="filterforType">Type:</label>
+    <select id="filterforType">
+      <option value="">All Study Space Types</option>
+      <option value="Library">Library</option>
+      <option value="Academic Support">Academic Support</option>
+      <option value="Lounge">Lounge</option>
+      <option value="Study Area">Study Area</option>
+      <option value="Residence Hall">Residence Hall</option>
+      <option value="Study Hall">Study Hall</option>
+    </select>
+
+    <label for="filterforBuilding">Building:</label>
+    <select id="filterforBuilding">
+      <option value="">All Buildings</option>
+      <option value="Marx Library">Marx Library</option>
+      <option value="Biomedical Libray">Biomedical Library</option>
+      <option value="Health Sciences">Health Sciences</option>
+      <option value="Mitchell College of Business">Mitchell College of Business</option>
+      <option value="Student Center">Student Center</option>
+      <option value="Academic Services Center">Academic Services Center</option>
+      <option value="Residence Halls">Residence Halls</option>
+    </select>
+
+    <div id="spaceResults"></div>
+
+    <script src="studyB.js"></script>
+
+    
+
+
+  </body>
+  
+
+
+</html>
