@@ -26,18 +26,27 @@ filterforType.addEventListener("change", applyFilters);
 filterforBuilding.addEventListener("change", applyFilters);
 
 function applyFilters() {
-    const spaceText = searchingInput.value.toLowerCase();
+    const spaceText = searchingInput.value.toLowerCase().trim();
     const spaceType = filterforType.value;
     const building = filterforBuilding.value;
 
-    const spaceFiltered = spacesforStudy.filter(studySpace =>
-    (studySpace.spaceName.toLowerCase().includes(spaceText) || 
-    studySpace.building.toLowerCase().includes(spaceText)) &&
-    (spaceType === "" || studySpace.type === spaceType) &&
-    (building === "" || studySpace.building === building)
-    );
-    
-    renderStudySpaces(spaceFiltered)
+    const studyspaceFiltered = spacesforStudy.filter(studySpace => {
+        const matchStudySearch =
+            spaceText === "" ||
+            studySpace.spaceName.toLowerCase().includes(spaceText) ||
+            studySpace.building.toLowerCase().includes(spaceText) ||
+            studySpace.type.toLowerCase().includes(spaceText);
+
+        const matchStudyType =
+            spaceType === "" || studySpace.type === spaceType;
+
+        const matchStudyBuilding =
+            building === "" || studySpace.building === building;
+
+        return matchStudySearch && matchStudyType && matchStudyBuilding;
+    });
+
+    renderStudySpaces(studyspaceFiltered);
 }
 
 function renderStudySpaces(spaceList) {
